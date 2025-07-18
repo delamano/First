@@ -1,0 +1,1 @@
+alias AtualizarFirst='git checkout main && git pull'
