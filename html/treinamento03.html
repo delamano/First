@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Treinamento 03</title>
+</head>
+<body>
+    <h1>If, Else e Switch</h1>
+    
+    <script>
+
+// Exemplo de uso do if, else e switch
+    const temperatura = 45;
+    if (temperatura>=30){
+        console.log("Muito calor");
+    }
+    else if (temperatura>=20 && temperatura<30){
+        console.log("Temperatura Normal");
+    }
+    else {
+        console.log("Frio");
+    }
+
+// Exemplo de uso do switch
+    let prato = 5;
+    switch(prato){
+        case 1:
+            console.log("Pizza");
+            break;
+        case 2:
+            console.log("Hamburguer");
+            break;
+        case 3:
+            console.log("Macarrão");
+            break
+        case 4:
+            console.log("Sushi");
+            break;
+        default:
+            console.log("Opção inválida");
+    }   
+
+// Exemplo de função com switch
+// A função recebe um número e imprime o prato correspondente
+  function escolherPrato(menu) {
+    switch (menu) {
+      case 1:
+        console.log("Você escolheu Pizza");
+        break;
+      case 2:
+        console.log("Você escolheu Macarrão");
+        break;
+      case 3:
+        console.log("Você escolheu Churrasco");
+        break;
+      case 4:
+        console.log("Você escolheu Sair");
+        break;
+      default:
+        console.log("Opção inválida");
+    }
+  }
+    escolherPrato(2); // roda com valor 2 na hora que a página abre
+
+// Exemplo de uso do prompt para escolher uma opção
+    let opcao = prompt("Escolha uma opção:\n1 - Pizza\n2 - Hambúrguer\n3 - Salada\n4 - Sair do menu");
+    opcao = Number(opcao);
+
+    switch(opcao){
+    case 1:
+        console.log("Pizza");
+        break;
+    case 2:
+        console.log("Hamburguer");
+        break;
+    case 3:
+        console.log("Macarrão");
+        break
+    case 4:
+        console.log("Sushi");
+         break;
+    default:
+        console.log("Opção inválida");
+}    
+    </script>
+</body>
+</html>
